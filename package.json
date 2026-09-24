@@ -2,6 +2,7 @@
   "name": "gkd-subscription",
   "version": "0.0.1",
   "type": "module",
+  "packageManager": "pnpm@9.12.0",
   "private": true,
   "gkd": {
     "outDir": "dist",
