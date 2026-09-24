@@ -9,7 +9,7 @@ export default defineAppConfig({
       name: '活动弹窗-自动点击关闭',
       desc: '自动点击福利活动弹窗底部的关闭按钮',
       exampleUrls: [
-        'https://cdn.jsdelivr.net/gh/<你的用户名>/<你的仓库名>@main/assets/examples/com.kugou.android/101.png',
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/examples/com.kugou.android/101.png',
       ],
       rules: [
         {

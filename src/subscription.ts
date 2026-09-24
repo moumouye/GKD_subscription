@@ -8,9 +8,9 @@ export default defineGkdSubscription({
   id: 1001,
   name: 'Personal GKD Subscription',
   version: 0,
-  author: 'Custom',
+  author: 'moumouye',
   checkUpdateUrl: './gkd.version.json5',
-  supportUri: 'https://github.com',
+  supportUri: 'https://github.com/moumouye/GKD_subscription',
   categories,
   apps,
 });

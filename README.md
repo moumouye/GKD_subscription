@@ -6,21 +6,21 @@
 
 ## 📱 在线订阅地址
 
-当您将本项目推送到您的 GitHub 仓库后，将 `<你的用户名>/<你的仓库名>` 替换为您真实的 GitHub 路径，即可在 GKD 中添加以下任意一个订阅链接：
+在 GKD 中添加以下任意一个订阅链接即可使用：
 
-### 1. jsDelivr CDN 加速源（推荐，国内访问极速且无需代理）
+### 1. GitHub Raw 原生直链（推荐，有外网环境时秒级实时更新、零缓存）
 ```txt
-https://cdn.jsdelivr.net/gh/<你的用户名>/<你的仓库名>@main/dist/gkd.json5
+https://raw.githubusercontent.com/moumouye/GKD_subscription/main/dist/gkd.json5
 ```
 
-### 2. GitHub Raw 直链
+### 2. jsDelivr CDN 加速源（国内免翻墙直连）
 ```txt
-https://raw.githubusercontent.com/<你的用户名>/<你的仓库名>/main/dist/gkd.json5
+https://cdn.jsdelivr.net/gh/moumouye/GKD_subscription@main/dist/gkd.json5
 ```
 
 ### 3. GitMirror 国内镜像源
 ```txt
-https://raw.gitmirror.com/<你的用户名>/<你的仓库名>/main/dist/gkd.json5
+https://raw.gitmirror.com/moumouye/GKD_subscription/main/dist/gkd.json5
 ```
 
 ---
