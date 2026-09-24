@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '局部广告-播放器广告倒计时',
       desc: '播放视频时，自动点击播放器左下角“几秒后将展示广告”浮层中的【取消】按钮',
       exampleUrls: [
-        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/examples/tv.danmaku.bili/103.png',
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/tv.danmaku.bili/103.png',
       ],
       rules: [
         {
@@ -31,7 +31,7 @@ export default defineGkdApp({
       name: '功能类-负反馈减少直播推荐-平板',
       desc: '在推荐视频长按反馈弹窗中，自动点击【减少直播推荐】',
       exampleUrls: [
-        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/examples/tv.danmaku.bili/104.png',
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/tv.danmaku.bili/104.png',
       ],
       rules: [
         {

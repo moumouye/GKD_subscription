@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '全屏广告-活动弹窗',
       desc: '自动点击福利活动弹窗底部的关闭按钮',
       exampleUrls: [
-        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/examples/com.kugou.android.lite/101.png',
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/com.kugou.android.lite/101.png',
       ],
       rules: [
         {
