@@ -8,7 +8,7 @@ const apps = await batchImportApps(fileURLToPath(new URL('./apps', import.meta.u
 export default defineGkdSubscription({
   id: 1001,
   name: 'YM 的 GKD 订阅',
-  version: 2,
+  version: 3,
   author: 'moumouye',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/moumouye/GKD_subscription',

@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 101,
-      name: '活动弹窗-自动点击关闭',
+      name: '全屏广告-活动弹窗',
       desc: '自动点击福利活动弹窗底部的关闭按钮',
       exampleUrls: [
         'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/examples/com.kugou.android.lite/101.png',
