@@ -9,6 +9,7 @@ on:
       - 'scripts/**'
       - 'package.json'
       - 'tsconfig.json'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 permissions:

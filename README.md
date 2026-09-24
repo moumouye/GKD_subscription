@@ -51,9 +51,9 @@
 在 `src/apps/` 目录下创建以目标应用包名命名的 `.ts` 文件（如 `com.example.app.ts`）：
 
 ```typescript
-import { defineAppConfig } from '@gkd-kit/define';
+import { defineGkdApp } from '@gkd-kit/define';
 
-export default defineAppConfig({
+export default defineGkdApp({
   id: 'com.example.app',
   name: '应用名称',
   groups: [
