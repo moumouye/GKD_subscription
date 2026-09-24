@@ -6,8 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 103,
-      name: '全屏广告-自动点击【取消】广告倒计时弹窗',
-      desc: '自动点击视频播放过程中“几秒后将展示广告”浮层中的“取消”按钮',
+      name: '局部广告-播放器广告倒计时',
+      desc: '播放视频时，自动点击播放器左下角“几秒后将展示广告”浮层中的【取消】按钮',
       exampleUrls: [
         'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/examples/tv.danmaku.bili/103.png',
       ],
