@@ -26,5 +26,24 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 104,
+      name: '功能类-负反馈减少直播推荐-平板',
+      desc: '在推荐视频长按反馈弹窗中，自动点击【减少直播推荐】',
+      exampleUrls: [
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/examples/tv.danmaku.bili/104.png',
+      ],
+      rules: [
+        {
+          matches: [
+            '[text="减少直播推荐"]',
+          ],
+          action: 'clickCenter',
+          snapshotUrls: [
+            'https://i.gkd.li/i/1790238525243',
+          ],
+        },
+      ],
+    },
   ],
 });
