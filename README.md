@@ -56,7 +56,8 @@ wise-curie/
     ├── subscription.ts           # 订阅元信息（名称、作者、ID等）
     ├── categories.ts             # 规则分类精简定义
     └── apps/                     # 按应用包名拆分的规则目录
-        └── com.kugou.android.ts  # 酷狗音乐规则（示例：活动弹窗自动关闭）
+        ├── com.kugou.android.ts       # 酷狗音乐规则
+        └── com.kugou.android.lite.ts  # 酷狗概念版规则
 ```
 
 ---

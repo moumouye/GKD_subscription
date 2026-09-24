@@ -7,7 +7,7 @@ const apps = await batchImportApps(`${import.meta.dirname}/apps`);
 export default defineGkdSubscription({
   id: 1001,
   name: 'Personal GKD Subscription',
-  version: 0,
+  version: 1,
   author: 'moumouye',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/moumouye/GKD_subscription',
