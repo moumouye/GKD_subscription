@@ -1,0 +1,54 @@
+name: Build and Deploy Subscription
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'tsconfig.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Check subscription validity
+        run: pnpm run check
+
+      - name: Build subscription dist
+        run: pnpm run build
+
+      - name: Commit and push updated dist
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/
+          if git diff --staged --quiet; then
+            echo "No changes in dist/ to commit."
+          else
+            git commit -m "chore(dist): auto-update subscription dist files [skip ci]"
+            git push origin main
+          fi

@@ -1,0 +1,23 @@
+{
+  "name": "gkd-subscription",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "gkd": {
+    "outDir": "dist",
+    "file": "gkd.json5",
+    "versionFile": "gkd.version.json5"
+  },
+  "scripts": {
+    "check": "tsc --noEmit && tsx ./scripts/check.ts",
+    "build": "tsc --noEmit && tsx ./scripts/build.ts"
+  },
+  "dependencies": {
+    "@gkd-kit/api": "0.8.0",
+    "@gkd-kit/define": "0.0.1",
+    "@gkd-kit/tools": "0.8.0",
+    "json5": "^2.2.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
