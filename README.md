@@ -1,4 +1,4 @@
-# Personal GKD Subscription
+# YM 的 GKD 订阅
 
 个人 GKD 自定义规则订阅。
 

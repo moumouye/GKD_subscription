@@ -1,7 +1,7 @@
 {
   id: 1001,
-  name: 'Personal GKD Subscription',
-  version: 1,
+  name: 'YM 的 GKD 订阅',
+  version: 2,
   author: 'moumouye',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/moumouye/GKD_subscription',
