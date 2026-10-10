@@ -45,5 +45,24 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 105,
+      name: '功能类-负反馈我不想看-平板',
+      desc: '在相关推荐视频更多操作弹窗中，自动点击【我不想看】',
+      exampleUrls: [
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/tv.danmaku.bili/105.png',
+      ],
+      rules: [
+        {
+          matches: [
+            '[text="我不想看"]',
+          ],
+          action: 'clickCenter',
+          snapshotUrls: [
+            'https://i.gkd.li/i/1791607188533',
+          ],
+        },
+      ],
+    },
   ],
 });
