@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 101,
       name: '全屏广告-活动弹窗',
-      desc: '自动点击福利活动弹窗底部的关闭按钮',
+      desc: '在福利活动弹窗中，自动点击底部的【关闭】按钮',
       exampleUrls: [
         'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/com.kugou.android.lite/101.png',
       ],
@@ -19,6 +19,31 @@ export default defineGkdApp({
           ],
           matches: [
             '[vid="ahe"][clickable=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/1790227505803',
+          ],
+        },
+      ],
+    },
+    {
+      key: 102,
+      name: '全屏广告-领取明日畅听弹窗关闭',
+      desc: '在领取明日畅听弹窗中，自动点击右上角的【关闭】按钮',
+      exampleUrls: [
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/com.kugou.android.lite/102.png',
+      ],
+      rules: [
+        {
+          activityIds: [
+            'com.kugou.framework.musicfees.ui.feeintercept.FeeInterceptWebActivity',
+          ],
+          matches: [
+            '@TextView[visibleToUser=true] + View > [text*="明日畅听"]',
+          ],
+          action: 'clickCenter',
+          snapshotUrls: [
+            'https://i.gkd.li/i/1792406931744',
           ],
         },
       ],
