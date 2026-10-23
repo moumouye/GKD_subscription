@@ -64,5 +64,27 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 106,
+      name: '功能类-展开更多评论',
+      desc: '在评论详情页中，自动点击底部的【展开更多评论】',
+      exampleUrls: [
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/tv.danmaku.bili/106.png',
+      ],
+      rules: [
+        {
+          activityIds: [
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+          ],
+          matches: [
+            '[text="展开更多评论"]',
+          ],
+          action: 'clickCenter',
+          snapshotUrls: [
+            'https://i.gkd.li/i/1792688158716',
+          ],
+        },
+      ],
+    },
   ],
 });
