@@ -73,13 +73,9 @@ export default defineGkdApp({
       ],
       rules: [
         {
-          activityIds: [
-            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
-          ],
           matches: [
-            '[text="展开更多评论"]',
+            '@[clickable=true] > [text*="展开更多评论"]',
           ],
-          action: 'clickCenter',
           snapshotUrls: [
             'https://i.gkd.li/i/1792688158716',
           ],
