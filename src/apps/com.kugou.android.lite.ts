@@ -48,5 +48,27 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 103,
+      name: '局部广告-发现页卡片广告关闭',
+      desc: '在发现页信息流中，自动点击卡片广告右上角的【关闭】按钮',
+      exampleUrls: [
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/com.kugou.android.lite/103.png',
+      ],
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.qq.e.tg.ADActivity',
+          ],
+          matches: [
+            '[vid="bnt"] + [vid="cdf"][clickable=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/1792576975836',
+          ],
+        },
+      ],
+    },
   ],
 });
