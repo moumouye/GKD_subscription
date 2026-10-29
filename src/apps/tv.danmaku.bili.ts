@@ -73,9 +73,12 @@ export default defineGkdApp({
       ],
       rules: [
         {
+          order: -1,
+          matchRoot: true,
           matches: [
             '@[clickable=true] > [text*="展开更多评论"]',
           ],
+          actionCd: 300,
           snapshotUrls: [
             'https://i.gkd.li/i/1792688158716',
           ],
