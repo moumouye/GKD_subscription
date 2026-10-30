@@ -11,7 +11,9 @@
   },
   "scripts": {
     "check": "tsc --noEmit && tsx ./scripts/check.ts",
-    "build": "tsc --noEmit && tsx ./scripts/build.ts"
+    "build": "tsc --noEmit && tsx ./scripts/build.ts",
+    "snapshot": "tsx ./scripts/snapshot.ts",
+    "orphans": "tsx ./scripts/orphans.ts"
   },
   "dependencies": {
     "@gkd-kit/api": "0.8.0",
