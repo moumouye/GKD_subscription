@@ -15,13 +15,15 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: [
+            'com.kugou.android.app.MediaActivity',
             'com.kugou.android.app.splash.foresplash.ForeSplashActivity',
           ],
           matches: [
-            '[vid="ahe"][clickable=true]',
+            '[vid="ahe" || vid="ahg"][clickable=true]',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/1790227505803',
+            'https://i.gkd.li/i/1793332395963',
           ],
         },
       ],
@@ -59,6 +61,7 @@ export default defineGkdApp({
         {
           fastQuery: true,
           activityIds: [
+            'com.kugou.android.app.MediaActivity',
             'com.qq.e.tg.ADActivity',
           ],
           matches: [
@@ -66,6 +69,7 @@ export default defineGkdApp({
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/1792576975836',
+            'https://i.gkd.li/i/1793332388401',
           ],
         },
       ],
