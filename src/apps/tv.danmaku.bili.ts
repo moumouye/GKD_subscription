@@ -85,5 +85,27 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 107,
+      name: '功能类-负反馈不喜欢此商品',
+      desc: '在屏蔽推广弹窗中，自动点击【不喜欢此商品】',
+      exampleUrls: [
+        'https://raw.githubusercontent.com/moumouye/GKD_subscription/main/assets/screenshots/tv.danmaku.bili/107.png',
+      ],
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
+          ],
+          matches: [
+            '@[clickable=true] > [text="不喜欢此商品"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/1794373214957',
+          ],
+        },
+      ],
+    },
   ],
 });
