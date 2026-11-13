@@ -17,7 +17,7 @@ export default defineGkdApp({
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
           ],
           matches: [
-            '[text*="后将展示广告" || text*="后将播放广告"] + [text="取消"][clickable=true]',
+            '[text*="后将展示广告" || text*="后将播放广告"][visibleToUser=true] + [text="取消"][clickable=true][visibleToUser=true]',
           ],
           actionCd: 2000,
           snapshotUrls: [
